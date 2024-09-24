@@ -1,0 +1,392 @@
+* {
+    margin: 0; /* Remove margens de todos os elementos */
+    padding: 0; /* Remove preenchimento interno de todos os elementos */
+    box-sizing: border-box; /* Inclui padding e bordas no cálculo da largura e altura */
+}
+
+html, body {
+    height: 100%; /* Garante que a altura do body e html seja 100% da viewport */
+    margin: 0; /* Remove qualquer margem padrão */
+}
+
+.base {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden; /* Garante que nenhum conteúdo exceda o contêiner */
+}
+
+.base nav ul {
+    list-style-type: none;
+    padding: 20px;
+    margin: 0; /* Remove a margem superior da lista de navegação */
+    background-color: #0f3550; /* Define a cor de fundo do menu de navegação */
+}
+
+/* Outros estilos permanecem os mesmos */
+
+
+.base nav ul li {
+    display: inline; /* Exibe os itens da lista de navegação na mesma linha (em linha) */
+    padding: 10px; /* Adiciona um preenchimento interno de 10px ao redor de cada item de navegação */
+    margin-right: 10px; /* Adiciona uma margem direita de 10px entre os itens de navegação */
+}
+
+.base nav ul li a {
+    color: #f0f0f0; /* Define a cor do texto dos links de navegação como cinza claro */
+    text-decoration: none; /* Remove o sublinhado dos links de navegação */
+}
+
+/* Adiciona espaço entre o ícone e o texto no menu de navegação */
+.base nav ul li a i {
+    margin-right: 8px; /* Adiciona um espaço entre o ícone e o texto */
+}
+
+.base footer {
+    background-color: #002035; /* Define a cor de fundo do rodapé */
+    padding: 30px; /* Adiciona um preenchimento interno ao redor do conteúdo do rodapé */
+    text-align: center; /* Centraliza o texto e outros elementos dentro do rodapé */
+    position: fixed; /* Fixa o rodapé na parte inferior da página */
+    width: 100%; /* Faz com que o rodapé ocupe 100% da largura da página */
+    bottom: 0; /* Alinha o rodapé à parte inferior da janela */
+    color: rgb(255, 255, 255); /* Define a cor do texto no rodapé como branco */
+    
+    
+    
+}
+
+.base footer ul {
+    list-style-type: none; /* Remove os marcadores de lista padrão (como pontos) */
+    padding: 0; /* Remove o preenchimento interno da lista */
+    margin: 0; /* Remove a margem externa da lista */
+    
+}
+
+.base footer ul li {
+    display: inline; /* Exibe os itens da lista na mesma linha (em linha) */
+    margin: 0 12px; /* Adiciona uma margem horizontal de 10px em ambos os lados dos itens da lista */
+
+}
+
+.base footer a {
+    color: white; /* Define a cor do texto dos links como branca */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    
+}
+
+.base footer a:hover {
+    color: #f0f0f0; /* Altera a cor dos links ao passar o mouse (opcional) */
+}
+
+.base form {
+    max-width: 100px; /* Define a largura máxima do formulário como 100 pixels */
+    padding: 20px; /* Adiciona um preenchimento interno de 20 pixels ao redor do conteúdo do formulário */
+    border: 1px solid #ffffff; /* Adiciona uma borda sólida de 1 pixel ao redor do formulário com cor branca */
+    border-radius: 8px; /* Adiciona bordas arredondadas com um raio de 8 pixels */
+}
+
+
+.project img {
+    width: 100%; /* Ajusta a largura da imagem para preencher o contêiner pai */
+    height: auto; /* Mantém a proporção original da imagem */
+    max-width: 400px; /* Define uma largura máxima para a imagem */
+    border-radius: 8px; /* Adiciona bordas arredondadas à imagem (opcional) */
+}
+
+/* Estiliza a galeria de projetos */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap; /* Permite que os projetos se movam para a linha seguinte se necessário */
+    gap: 20px; /* Adiciona espaço entre os projetos */
+    justify-content: center; /* Centraliza os projetos horizontalmente */
+}
+
+/* Estiliza cada projeto */
+.project {
+    width: 100%;
+    max-width: 300px; /* Define a largura máxima do projeto */
+    border: 1px solid #ddd; /* Adiciona uma borda ao projeto */
+    border-radius: 8px; /* Adiciona bordas arredondadas */
+    overflow: hidden; /* Garante que o conteúdo não saia das bordas arredondadas */
+    background-color: #fff; /* Cor de fundo do projeto */
+    text-align: center; /* Centraliza o texto no projeto */
+    padding: 10px; /* Adiciona espaço interno ao projeto */
+}
+
+.project img {
+    width: 100%; /* Ajusta a largura da imagem para preencher o contêiner do projeto */
+    height: auto; /* Mantém a proporção original da imagem */
+    display: block; /* Remove o espaço abaixo da imagem */
+    border-bottom: 1px solid #ddd; /* Adiciona uma borda abaixo da imagem */
+}
+
+.project h3 {
+    margin: 10px 0 5px; /* Ajusta o espaçamento ao redor do título do projeto */
+}
+
+.project h1 {
+    margin: 10px 0 5px; /* Ajusta o espaçamento ao redor do título do projeto */
+    
+}
+
+.project p {
+    margin: 0 0 10px; /* Ajusta o espaçamento ao redor da descrição do projeto */
+}
+
+.project a {
+    color: #007bff; /* Cor do link */
+    text-decoration: none; /* Remove o sublinhado do link */
+    font-weight: bold; /* Torna o texto do link em negrito */
+}
+
+.project a:hover {
+    text-decoration: underline; /* Adiciona o sublinhado ao passar o mouse sobre o link */
+}
+
+.project img {
+    width: 300px; /* Define uma largura fixa para a imagem */
+    height: 200px; /* Define uma altura fixa para a imagem */
+    object-fit: cover; /* Faz com que a imagem preencha o contêiner sem distorcer */
+}
+
+/* Estiliza o título da seção de projetos */
+.project-title {
+    font-family: 'Arial', sans-serif; /* Define a fonte do título */
+    color: #333; /* Define a cor do texto */
+    font-size: 2.5em; /* Define o tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Adiciona espaço abaixo do título */
+    padding-bottom: 10px; /* Adiciona espaço abaixo da linha */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra ao texto */
+    position: relative; /* Permite o uso de ::after para o traço */
+}
+
+/* Adiciona o traço decorativo abaixo do título */
+.project-title::after {
+    content: "";
+    display: block;
+    width: 80px; /* Ajuste a largura conforme necessário */
+    height: 4px; /* Ajuste a altura conforme necessário */
+    background-color: #007bff; /* Cor do traço */
+    margin: 10px auto 0; /* Alinha o traço no centro e adiciona margem superior */
+    border-radius: 2px; /* Adiciona bordas arredondadas ao traço */
+}
+
+.project-title:hover {
+    color: #007bff; /* Altera a cor do título quando o mouse passa sobre ele */
+}
+
+/* Estilo para a seção de contato */
+.contact-title {
+    font-family: 'Arial', sans-serif; /* Fonte do título */
+    color: #333; /* Cor do texto */
+    font-size: 2.5em; /* Tamanho da fonte */
+    text-align: center; /* Centraliza o texto */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra no texto */
+}
+.contact-title::after {
+    content: "";
+    display: block;
+    width: 80px; /* Ajuste a largura conforme necessário */
+    height: 4px; /* Ajuste a altura conforme necessário */
+    background-color: #007bff; /* Cor do traço */
+    margin: 10px auto 0; /* Alinha o traço no centro e adiciona margem superior */
+    border-radius: 2px; /* Adiciona bordas arredondadas ao traço */
+}
+
+.contact-title:hover {
+    color: #007bff; /* Cor ao passar o mouse */
+    
+}
+
+/* Estilo para o contêiner da seção de contato */
+.contact-container {
+    display: flex; /* Usa flexbox para layout */
+    justify-content: space-between; /* Distribui espaço entre o formulário e as informações de contato */
+    gap: 20px; /* Espaço entre o formulário e as informações de contato */
+    padding: 20px; /* Padding ao redor do contêiner */
+    flex-wrap: wrap; /* Permite que os itens se movam para a linha seguinte se necessário */
+}
+
+
+
+/* Estilo para as informações de contato */
+.contact-info {
+    flex: 1; /* Faz com que as informações de contato ocupem a maior parte do contêiner */
+    max-width: 400px; /* Largura máxima das informações de contato */
+    background-color: #f9f9f9; /* Cor de fundo das informações de contato */
+    padding: 20px; /* Padding interno das informações de contato */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor das informações de contato */
+}
+
+.contact-info h2 {
+    font-family: 'Arial', sans-serif; /* Fonte do título */
+    color: #333; /* Cor do texto */
+    font-size: 2em; /* Tamanho da fonte */
+    margin-bottom: 10px; /* Espaço abaixo do título */
+}
+
+.contact-info p {
+    font-family: 'Arial', sans-serif; /* Fonte do parágrafo */
+    color: #666; /* Cor do texto */
+    font-size: 1em; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaço abaixo do parágrafo */
+}
+
+.contact-info ul {
+    list-style: none; /* Remove marcadores da lista */
+    padding: 0; /* Remove padding da lista */
+    
+}
+
+.contact-info li {
+    margin-bottom: 15px; /* Espaço abaixo de cada item da lista */
+}
+
+.contact-info a {
+    color: #007bff; /* Cor dos links */
+    text-decoration: none; /* Remove o sublinhado dos links */
+    font-weight: bold; /* Texto em negrito */
+    display: flex; /* Flexbox para alinhar ícone e texto */
+    align-items: center; /* Alinha verticalmente o ícone e o texto */
+}
+
+.contact-info a i {
+    margin-right: 8px; /* Espaço entre ícone e texto */
+}
+
+.contact-info a:hover {
+    text-decoration: underline; /* Adiciona sublinhado ao passar o mouse */
+}
+
+
+
+/* Estilo geral para a seção "Sobre Mim" */
+.about-section {
+    padding: 40px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+}
+
+/* Estilo para o título principal */
+.about-section h1 {
+    font-size: 2.8em;
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+/* Adiciona uma linha decorativa abaixo do título */
+.about-section h1::after {
+    content: "";
+    display: block;
+    width: 80px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 10px auto 0;
+    border-radius: 2px;
+}
+
+/* Estilo para os subtítulos */
+.about-section h2 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2em;
+    color: #333;
+    margin-top: 30px;
+    font-weight: 600;
+    border-bottom: 2px solid #007bff;
+    padding-bottom: 8px;
+    position: relative;
+}
+
+/* Estilo para o parágrafo */
+.about-section p {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+    text-align: center;
+    margin: 20px auto;
+}
+
+
+/* Estilo para as listas */
+.about-section ul {
+    font-family: 'Arial', sans-serif;
+    list-style-type: disc;
+    padding: 0 20px;
+    margin: 20px auto;
+}
+
+/* Estilo para os itens da lista */
+.about-section ul li {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #ffffff;
+    transition: background-color 0.4s, transform 0.4s;
+    position: relative;
+}
+
+/* Efeito de hover para os itens da lista */
+.about-section ul li:hover {
+    background-color: #ffffff;
+    transform: translateX(20px);
+}
+
+/* Remove a borda inferior do último item da lista */
+.about-section ul li:last-child {
+    border-bottom: none;
+}
+
+/* Estilo para a página inicial */
+.home-page {
+    display: flex; /* Usa flexbox para layout */
+    flex-direction: column; /* Organiza os itens em uma coluna */
+    align-items: center; /* Centraliza o conteúdo horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    padding: 50px 20px; /* Padding ao redor do conteúdo */
+    background-color: #f4f4f4; /* Cor de fundo da página */
+    min-height: 100vh; /* Garante que a página ocupe pelo menos a altura da tela */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura e altura */
+}
+
+/* Estilo para o título da página */
+.home-page h1 {
+    font-family: 'Arial', sans-serif; /* Fonte do título */
+    color: #333; /* Cor do texto */
+    font-size: 3em; /* Tamanho da fonte */
+    margin-bottom: 20px; /* Espaço abaixo do título */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra no texto */
+}
+
+/* Estilo para o parágrafo */
+.home-page p {
+    font-family: 'Arial', sans-serif; /* Fonte do parágrafo */
+    color: #666; /* Cor do texto */
+    font-size: 1.2em; /* Tamanho da fonte */
+    margin-bottom: 30px; /* Espaço abaixo do parágrafo */
+    line-height: 1.6; /* Altura da linha para melhor legibilidade */
+    max-width: 800px; /* Define uma largura máxima para o parágrafo */
+}
+
+/* Estilo para a imagem */
+.home-page img {
+    max-width: 100%; /* Faz com que a imagem se ajuste ao tamanho do contêiner */
+    height: auto; /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra ao redor da imagem */
+}
